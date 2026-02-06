@@ -1,0 +1,18 @@
+body{
+    background-color: 	#6F4E37;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 50px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 300%;
+}
+p1 {
+    color: red;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+}
