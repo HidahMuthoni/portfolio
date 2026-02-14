@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking System</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        input, button { padding: 10px; margin: 5px; }
+        .result { margin-top: 20px; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Banking System Demo</h1>
+    <form action="/checkBalance" method="post">
+        <input type="text" name="account" placeholder="Enter account number" required>
+        <button type="submit">Check Balance</button>
+    </form>
+
+    <div class="result">
+        <p th:text="'Balance: $' + ${balance}" th:if="${balance != null}"></p>
+        <p th:text="${error}" th:if="${error != null}" class="error"></p>
+    </div>
+</body>
+</html>
